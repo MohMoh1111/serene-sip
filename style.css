@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: #f0e2c5;
+  background-color: #e3d095;
 }
 header {
   border: 2px solid #000;
@@ -14,12 +14,15 @@ header {
 header h1 {
   font-family: "Playfair Display SC", serif;
   color: #49281a;
-  margin-bottom: 20px;
-  font-size: 3rem;
+  /*margin-bottom: 20px;*/
+  font-size: 4rem;
+  text-align: center;
 }
 header p {
   font-family: "Lato", sans-serif;
+  font-size: 1.1rem;
   color: #49281a;
+  margin-top: 10px;
 }
 header a {
   font-family: "Lato", sans-serif;
@@ -49,8 +52,42 @@ nav ul li {
 }
 nav ul li a {
   color: #49281a;
+  display: block;
   text-decoration: none;
 }
+.container {
+  /* width: 900px;
+  height: 300px;
+  border: 1px solid #000;
+  margin: 20px auto;*/
+  background-image: url(images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: #49281a;
+  height: 350px;
+  /* color: #f0e2c5;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.content h1 {
+  font-size: 4rem;
+  color: #49281a;
+  text-align: center;
+  background-color: transparent;
+}
+.content p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #49281a;
+  background-color: transparent;
+}
+.content {
+  background-color: transparent;
+}
+
 /* our menu section */
 #our-menu,
 #about-us,
@@ -60,7 +97,8 @@ footer {
   width: 80%;
   margin: 20px auto;
 }
-#our-menu h2,
+#our-menu h1,
+h2,
 #contact h2,
 #about-us {
   font-family: "Playfair Display SC", serif;
@@ -81,14 +119,19 @@ footer {
 .card {
   border: 1px solid #000;
   width: 240px;
+  height: auto;
+  vertical-align: top;
   display: inline-block;
   padding: 10px;
+  margin: 10px;
   border-radius: 5px;
   font-family: "Lato", sans-serif;
   color: #49281a;
 }
 .card-img-top {
   max-width: 100%;
+  height: 250px;
+  object-fit: cover;
   border-radius: 5px 5px 0px 0px;
 }
 .card-body {
